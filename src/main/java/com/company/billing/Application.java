@@ -18,5 +18,6 @@ public class Application {
 
       // ClientRepository clientRepository = (ClientRepository)context.getBean("clientRepository");
       // System.out.println(clientRepository.findAll());
+
     }
 }
