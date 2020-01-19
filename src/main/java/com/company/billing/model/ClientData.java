@@ -15,8 +15,8 @@ import javax.persistence.Table;
 @Data
 @Entity
 @Table(name = "client_data")
-@EqualsAndHashCode(exclude = {"authorizedUser"})
-@ToString(exclude = {"authorizedUser"})
+@EqualsAndHashCode(exclude = {"client"})
+@ToString(exclude = {"client"})
 public class ClientData extends BaseEntity {
 
     @Column(name = "rate", nullable = false)
@@ -27,6 +27,6 @@ public class ClientData extends BaseEntity {
 
     //@JsonIgnore
     @OneToOne(mappedBy = "client")
-    private Client authorizedUser;
+    private Client client;
 
 }

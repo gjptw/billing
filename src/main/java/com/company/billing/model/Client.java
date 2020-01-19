@@ -2,6 +2,7 @@ package com.company.billing.model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
 import lombok.ToString;
 
 import javax.persistence.CascadeType;
@@ -15,8 +16,10 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "client")
 @EqualsAndHashCode(exclude = {"clientData"})
-@ToString(exclude = {"assignments"})
+@ToString(exclude = {"clientData"})
 public class Client extends BaseEntity {
+
+    @Getter
     @Column(name = "first_name", nullable = false)
     private String firstName;
 
@@ -26,4 +29,8 @@ public class Client extends BaseEntity {
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "cont_info_id", nullable = false)
     private ClientData clientData;
+
+    public String getFirstName() {
+        return firstName;
+    }
 }
