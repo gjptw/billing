@@ -20,3 +20,11 @@ CREATE TABLE IF NOT EXISTS client_data (
 ALTER TABLE client
     ADD FOREIGN KEY(client_data_id) REFERENCES client_data(id) ON UPDATE CASCADE
         ON DELETE CASCADE;
+
+INSERT INTO client_data (id, minute_rate, balance) VALUES (1, 10500, 12500, 1);
+INSERT INTO client_data (id, minute_rate, balance) VALUES (2, 700, 1400, 2);
+INSERT INTO client_data (id, minute_rate, balance) VALUES (3, 800, 189000, 3);
+
+INSERT INTO client (id, first_name, last_name, client_data_id) VALUES (1,'Ivan', 'Ivanov', 1);
+INSERT INTO client (id, first_name, last_name, client_data_id) VALUES (2,'Boris', 'Borisov', 2);
+INSERT INTO client (id, first_name, last_name, client_data_id) VALUES (3,'Petr', 'Petrov', 3);
