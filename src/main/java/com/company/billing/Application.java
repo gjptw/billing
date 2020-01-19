@@ -6,6 +6,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import org.apache.catalina.startup.Catalina;
+
 import java.util.Arrays;
 
 //@Configuration
@@ -23,6 +25,16 @@ public class Application {
 
         // ClientRepository clientRepository = (ClientRepository)context.getBean("clientRepository");
         // System.out.println(clientRepository.findAll());
+
+//        String contextPath = "/";
+//        String appBase = ".";
+//        Catalina tomcat = new Catalina(); // getTomcatInstance();
+//
+//        tomcat.setPort(Integer.valueOf(port.orElse("8080") ));
+//        tomcat.getHost().setAppBase(appBase);
+//        tomcat.addWebapp(contextPath, appBase);
+//        tomcat.start();
+//        tomcat.getServer().await();
 
     }
 
