@@ -16,7 +16,7 @@ import javax.persistence.Table;
 @Table(name = "client")
 @EqualsAndHashCode(exclude = {"clientData"})
 @ToString(exclude = {"assignments"})
-public class Client {
+public class Client extends BaseEntity {
     @Column(name = "first_name", nullable = false)
     private String firstName;
 

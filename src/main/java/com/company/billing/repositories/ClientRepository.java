@@ -1,4 +1,4 @@
-package com.company.billing.jpa;
+package com.company.billing.repositories;
 
 import com.company.billing.model.Client;
 import org.springframework.stereotype.Repository;
