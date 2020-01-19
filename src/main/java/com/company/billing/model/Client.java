@@ -28,7 +28,7 @@ public class Client extends BaseEntity {
     private String lastName;
 
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "cont_info_id", nullable = false)
+    @JoinColumn(name = "client_data_id", nullable = false)
     private ClientData clientData;
 
     public String getFirstName() {

@@ -3,10 +3,13 @@ package com.company.billing;
 import com.company.billing.model.Client;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.Arrays;
 
-//@EnableJpaRepositories
+//@Configuration
+//@ComponentScan("com.company.billing")
 public class Application {
     public static void main(String[] args) {
 

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository("clientDataRepository")
+//@Repository("clientDataRepository")
 public interface ClientDataRepository extends BaseRepository<ClientData, Long> {
 
         List<ClientData> findAll();
