@@ -3,7 +3,11 @@ package com.company.billing;
 import com.company.billing.model.Client;
 import com.company.billing.model.ClientData;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
+//@Configuration
+//@ComponentScan("com.company.billing.model")
 public class AppContext {
     @Bean
     public Client client() {

@@ -13,6 +13,7 @@ public class Application {
         // ApplicationContext context = new ClassPathXmlApplicationContext("application-context.xml");
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppContext.class);
+
         Client client = context.getBean(Client.class);
         System.out.println(client.getFirstName());
         System.out.println(Arrays.toString(context.getBeanDefinitionNames()));

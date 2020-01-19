@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
+import org.springframework.context.annotation.Bean;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
